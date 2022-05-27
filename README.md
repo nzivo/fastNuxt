@@ -4,15 +4,19 @@ Here is a fun project I[^1] am doing so as to learn NuxtJS and Fast API.
 
 ## Nuxt Documentation[^2]
 
-We are using Docus for documentation (It is planned to be open sourced in the following weeks).
+Nuxt.js is a free and open source JavaScript library based on Vue.js, Node.js, Webpack and Babel.js. Nuxt is inspired by Next.js, which is a framework of similar purpose, based on React.js.
 
-We recommend to install the Docus extension for VS Code.
+Initially install plugins
 
-Run npx yarn stub once in the root directory
-Go into the docs directory: cd docs
-Install docs dependencies with npx yarn install
-Run npx yarn dev to start Docus in development mode
-The pages are generated from docs/content/, you can start editing them to start helping us on documenting Nuxt 3
+```
+yarn install
+```
+
+Run the server
+
+```
+yarn dev
+```
 
 ## FastAPI Documentation[^3]
 
@@ -20,16 +24,36 @@ FastAPI is a modern, fast (high-performance), web framework for building APIs wi
 
 The key features are:
 
-Fast: Very high performance, on par with NodeJS and Go (thanks to Starlette and Pydantic). One of the fastest Python frameworks available.
+1. Fast.
+2. Fast to code.
+3. Fewer bugs.
+4. Intuitive.
+5. Easy to use and learn.
+6. Short.
+7. Fewer bugs.
+8. Robust.
+9. Standards-based.
 
-Fast to code: Increase the speed to develop features by about 200% to 300%. \*
+I will be using git for my commands, please check official documentaion for powershell, cmd and other OS commands to access the `venv`
 
-Fewer bugs: Reduce about 40% of human (developer) induced errors. \*
-Intuitive: Great editor support. Completion everywhere. Less time debugging.
-Easy: Designed to be easy to use and learn. Less time reading docs.
-Short: Minimize code duplication. Multiple features from each parameter declaration. Fewer bugs.
-Robust: Get production-ready code. With automatic interactive documentation.
-Standards-based: Based on (and fully compatible with) the open standards for APIs: OpenAPI (previously known as Swagger) and JSON Schema.
+access `venv` on terminal **avoid $**
+
+```
+$ cd <server>\Scripts
+$ . activate
+```
+
+Install pip dependencies **Using mysql DB**
+
+```
+pip install fastapi sqlalchemy pymysql uvicorn
+```
+
+Incase of a warning to update pip, run
+
+```
+python.exe -m pip install --upgrade pip
+```
 
 [^1]: [John Nzivo](https://github.com/nzivo)
 [^2]: [Nuxt JS](https://nuxtjs.org/)
