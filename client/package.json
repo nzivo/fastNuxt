@@ -1,0 +1,14 @@
+{
+  "name": "fast-nuxt",
+  "version": "1.0.0",
+  "description": "Nuxt meets fastAPI",
+  "main": "index.js",
+  "author": "nzivo",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "start": "nuxt start"
+  }
+}
