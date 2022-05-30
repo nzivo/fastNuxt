@@ -1,6 +1,17 @@
 <template lang="">
   <div>
-    <h1>Nuxt JS Meets Fast API</h1>
+    <v-main>
+      <v-container>
+        <v-row>
+          <v-col>
+            <Form />
+          </v-col>
+          <v-col>
+            <Table />
+          </v-col>
+        </v-row>
+      </v-container>
+    </v-main>
   </div>
 </template>
 <script>
