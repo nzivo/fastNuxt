@@ -43,6 +43,14 @@ $ cd <server>\Scripts
 $ . activate
 ```
 
+to install pip dependencies since I will use Postgres henceforth
+
+```
+pip install -r requirements.txt
+```
+
+### Older Version
+
 Install pip dependencies **Using mysql DB**
 
 ```
@@ -53,6 +61,20 @@ Incase of a warning to update pip, run
 
 ```
 python.exe -m pip install --upgrade pip
+```
+
+## Docker Commands
+
+To run a **postgres container**
+
+```
+docker run --name postgresDB -e POSTGRES_PASSWORD=password -p 5432:5432 -d postgres
+```
+
+To install a mysql container
+
+```
+docker run --name mysqldb -e MYSQL_ROOT_PASSWORD=password -e MYSQL_DATABASE=fastapi -d -p 3306:3306 mysql:latest
 ```
 
 [^1]: [John Nzivo](https://github.com/nzivo)
